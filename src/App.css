@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#drum-machine {
+    width: auto;
+    height: 100vh;
+    background-image: url("./Images/drum-img.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2rem;
+}
+.header {
+    text-align: center;
+    color: white;
+    background-color: #e71ccc9e;
+    
+}
+.container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#display {
+    width: 200px;
+    padding: 10px;
+    font-size: 2rem;
+    color: rgb(245, 245, 245);
+    background-color: rgba(66, 204, 169, 0.548);
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(37, 98, 70);
+}
+.drum-pads{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    align-items: center;
+    margin: 0 auto;
+    width: 800px;
+}
+.drum-pad { 
+    color: white;
+    border: 2px solid yellow;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: 5px;
+    padding: 15px;
+    background-color: rgba(230, 46, 215, 0.692);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.drum-pad:focus,
+.drum-pad:hover {
+    box-shadow: 0 0 10px yellow;
+    background-color:  rgb(230, 46, 215);
+}
+.active {
+    background-color: rgba(255, 255, 0, 0.616);
+    box-shadow: 0 0 10px yellow;
+  }
+p {
+    font-size: 0.7rem;
+}
+
+
+
